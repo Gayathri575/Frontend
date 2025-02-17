@@ -1,0 +1,72 @@
+/* Keep Navbar Structure */
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 5%;
+    background-color: #fff;
+}
+
+/* Logo Size */
+.navbar .jhead {
+    max-width: 100px;
+    height: auto;
+    display: block;
+}
+
+/* Navbar Menu */
+.navbar-menu {
+    display: flex;
+    list-style: none;
+    gap: 20px;
+    font-size: 18px;
+    padding: 0;
+    margin: 0;
+    cursor: pointer;
+}
+
+/* Ensure Active Menu Item Stands Out */
+.navbar-menu .active {
+    padding-bottom: 2px;
+    
+}
+
+/* Adjust Navbar Right Side */
+.navbar-right {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+/* Button Tweaks: Keep Original Look but Fix Hover */
+.navbar button {
+    background: transparent;
+    font-size: 16px;
+    color: #49557e;
+    border: 1px solid #4c9743;
+    padding: 8px 25px;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: 0.3s ease-in-out;
+}
+
+.navbar button:hover {
+    background-color: #fff4f2; /* Subtle effect */
+    border-color: #1a5d0c;
+}
+
+/* Fix Search Icon Dot */
+.navbar-search-icon {
+    position: relative;
+}
+
+.navbar-search-icon .dot {
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    background-color: #E32227;
+    border-radius: 50%;
+    top: -5px;
+    right: -5px;
+}
+

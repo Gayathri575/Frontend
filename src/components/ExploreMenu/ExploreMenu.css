@@ -1,0 +1,95 @@
+/* General Styling */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f9f9f9;
+    text-align: center;
+}
+
+/* Menu Section */
+.explore-menu {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    padding: 20px;
+}
+
+.explore-menu h1 {
+    
+    color: #1a5d0c;
+    font-weight: 500;
+    margin-top: 60px;
+}
+
+.explore-menu p {
+    max-width: 60ch;
+    color: #1a5d0c;
+    font-size: 20px;
+    margin-top: 5px;
+}
+
+/* Menu List */
+.explore-menu-list {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;  /* Ensures items stay aligned */
+    gap: 5%;  /* Keeps proper spacing */
+    text-align: center;
+    margin: 20px 0px;
+    overflow-x: auto;
+    white-space: nowrap;
+    padding-bottom: 10px;
+}
+
+.explore-menu-list::-webkit-scrollbar {
+    display: none;
+}
+
+/* Menu Items */
+.explore-menu-list-item {
+    padding: 10px;  /* Added padding to prevent border cutoff */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    cursor: pointer;
+}
+
+/* Menu Item Images */
+.explore-menu-list-item img {
+    width: 7.5vw;
+    min-width: 70px;
+    height: auto;
+    cursor: pointer;
+    border-radius: 50%;
+    transition: 0.2s;
+    object-fit: cover;  /* Ensures proper scaling */
+}
+
+/* Active (Selected) Item */
+.explore-menu-list-item.active img {
+    border: 5px solid #ff9900;
+    border-radius: 50%;  /* Fixed issue where border was cut */
+    transform: scale(1.1);
+}
+
+/* Menu Item Text */
+.explore-menu-list-item p {
+    margin-top: 10px;
+    color: black;
+    font-size: max(1.4vw, 16px);
+    cursor: pointer;
+}
+
+/* Divider */
+.explore-menu hr {
+    margin: 10px 0px;
+    height: 2px;
+    background-color: #1a5d0c;
+    border: none;
+}
+
+/* Smooth Scrolling */
+.explore-menu-list {
+    scroll-behavior: smooth;
+}

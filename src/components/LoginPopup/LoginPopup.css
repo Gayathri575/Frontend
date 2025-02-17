@@ -1,0 +1,101 @@
+/* Center the popup */
+.login-popup {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+  }
+  
+  /* Container styling */
+  .login-popup-container {
+    background: white;
+    padding: 20px;
+    width: 350px;
+    border-radius: 12px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    position: relative;
+  }
+  
+  /* Title section */
+  .login-popup-title {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 15px;
+  }
+  
+  /* Close icon */
+  .close-icon {
+    width: 24px;
+    cursor: pointer;
+    transition: transform 0.2s ease-in-out;
+  }
+  
+  .close-icon:hover {
+    transform: scale(1.1);
+  }
+  
+  /* Input fields */
+  .login-popup-inputs input {
+    width: 100%;
+    padding: 10px;
+    margin: 8px 0;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 16px;
+  }
+  
+  /* Button styling */
+  button {
+    width: 100%;
+    background: #1a5d0c; /* Jalapeño Green */
+    color: white;
+    border: none;
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 6px;
+    cursor: pointer;
+    margin-top: 10px;
+    transition: background 0.3s ease-in-out;
+  }
+  
+  button:hover {
+    background: #14470a; /* Darker Green */
+  }
+  
+  /* Terms & Conditions */
+  .login-popup-condition {
+    display: flex;
+    align-items: center;
+    font-size: 14px;
+    margin-top: 10px;
+    text-align: left;
+  }
+  
+  .login-popup-condition input {
+    margin-right: 8px;
+  }
+  
+  /* Toggle between Login & Signup */
+  p {
+    margin-top: 10px;
+    font-size: 14px;
+  }
+  
+  p span {
+    color: #1a5d0c;
+    font-weight: bold;
+    cursor: pointer;
+  }
+  
+  p span:hover {
+    text-decoration: underline;
+  }
+  
