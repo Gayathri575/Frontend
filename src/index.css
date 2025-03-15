@@ -13,7 +13,7 @@ body {
   min-height: 100vh;
   font-size: 16px;
   line-height: 1.6;
-  background-color:#F5F1E3;
+  background-color:;
   color: #333;
 }
 
@@ -32,6 +32,7 @@ button {
 button:hover {
   background-color: #FF4500; /* Darker on hover */
 }
+
 @keyframes fadeIn{
   0%{
     opacity: 0;

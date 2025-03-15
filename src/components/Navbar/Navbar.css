@@ -1,72 +1,222 @@
-/* Keep Navbar Structure */
+
 .navbar {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 10px 5%;
-    background-color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 12px 5%;
+  background-color: #fff;
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: 1000;
 }
 
-/* Logo Size */
-.navbar .jhead {
-    max-width: 100px;
-    height: auto;
-    display: block;
+
+.logo-img {
+  max-width: 120px;
+  height: auto;
+  display: block;
 }
 
-/* Navbar Menu */
-.navbar-menu {
-    display: flex;
-    list-style: none;
-    gap: 20px;
-    font-size: 18px;
-    padding: 0;
-    margin: 0;
-    cursor: pointer;
+
+.navbar-search {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  position: relative;
 }
 
-/* Ensure Active Menu Item Stands Out */
-.navbar-menu .active {
-    padding-bottom: 2px;
-    
+.search-box {
+  padding: 8px 12px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 14px;
+  width: 250px;
 }
 
-/* Adjust Navbar Right Side */
-.navbar-right {
-    display: flex;
-    align-items: center;
-    gap: 20px;
+
+.search-results {
+  position: absolute;
+  top: 40px;
+  background: white;
+  width: 100%;
+  border-radius: 5px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  z-index: 1002;
 }
 
-/* Button Tweaks: Keep Original Look but Fix Hover */
-.navbar button {
-    background: transparent;
-    font-size: 16px;
-    color: #49557e;
-    border: 1px solid #4c9743;
-    padding: 8px 25px;
-    border-radius: 50px;
-    cursor: pointer;
-    transition: 0.3s ease-in-out;
+.search-item {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 8px;
+  border-bottom: 1px solid #f0f0f0;
 }
 
-.navbar button:hover {
-    background-color: #fff4f2; /* Subtle effect */
-    border-color: #1a5d0c;
+.search-item-img {
+  width: 40px;
+  height: 40px;
+  object-fit: cover;
 }
 
-/* Fix Search Icon Dot */
-.navbar-search-icon {
-    position: relative;
+.add-cart-btn {
+  margin-left: auto;
+  background: #1a5d0c;
+  color: white;
+  border: none;
+  padding: 5px 10px;
+  border-radius: 5px;
+  cursor: pointer;
 }
 
-.navbar-search-icon .dot {
-    position: absolute;
-    width: 10px;
-    height: 10px;
-    background-color: #E32227;
-    border-radius: 50%;
-    top: -5px;
-    right: -5px;
+
+.navbar-icons {
+  display: flex;
+  align-items: center;
+  gap: 15px;
 }
 
+.navbar-icons a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 5px;
+}
+
+.navbar-icons a svg {
+  width: 30px;  
+  height: 30px; 
+  color: #333;
+  transition: color 0.3s ease-in-out;
+}
+
+
+.navbar-icons a:hover svg {
+  color: #1a5d0c; 
+}
+
+.dark-mode-btn {
+  background: none;
+  border: none;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 5px;
+  font-size: 24px;
+}
+
+.dropdown {
+  position: relative;
+}
+
+.dropdown-btn {
+  background: none;
+  border: none;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 5px;
+  font-size: 24px;
+}
+
+
+.dropdown-menu {
+  position: absolute;
+  right: 0;
+  top: 40px;
+  width: 200px;
+  background-color: #fff;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  border-radius: 6px;
+  display: flex;
+  flex-direction: column;
+  padding: 5px 0;
+  opacity: 0;
+  transform: translateY(-10px);
+  transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out;
+  visibility: hidden;
+  z-index: 1001;
+}
+
+.dropdown-menu.open {
+  opacity: 1;
+  transform: translateY(0);
+  visibility: visible;
+}
+
+.dropdown-item {
+  display: block;
+  padding: 10px 15px;
+  color: #333;
+  font-size: 14px;
+  text-decoration: none;
+  transition: 0.3s;
+  text-align: left;
+}
+
+.dropdown-item:hover {
+  background-color: #eaf5e3;
+  color: #1a5d0c;
+}
+
+
+.navbar-icons button,
+.dropdown-btn {
+  background: none;
+  border: none;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 5px;
+  color: #333;
+  font-size: 24px;
+}
+
+
+.navbar-icons button svg,
+.dropdown-btn svg {
+  width: 35px;
+  height: 35px;
+}
+
+
+.dark-mode {
+  background-color: #121212;
+  color: white;
+}
+
+.dark-mode .navbar {
+  background-color: #1e1e1e;
+  box-shadow: none;
+}
+
+.dark-mode .search-box {
+  background: #333;
+  color: white;
+  border: 1px solid #555;
+}
+
+.dark-mode .search-box::placeholder {
+  color: #bbb;
+}
+
+.dark-mode .dropdown-menu {
+  background: #222;
+  box-shadow: 0 4px 10px rgba(255, 255, 255, 0.1);
+}
+
+.dark-mode .dropdown-item {
+  color: white;
+}
+
+.dark-mode .dropdown-item:hover {
+  background: #333;
+}
+
+.dark-mode .dark-mode-btn {
+  background: #333;
+  color: white;
+}

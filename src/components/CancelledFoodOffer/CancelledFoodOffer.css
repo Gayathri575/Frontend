@@ -1,0 +1,82 @@
+
+.tracker-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f8f9fa;
+  }
+  
+  
+  .card {
+    width: 24rem; /* Equivalent to w-96 in Tailwind */
+    padding: 1rem;
+    background: white;
+    text-align: center;
+    border: 2px solid #1a5d0c; /* Green border */
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    transition: opacity 0.5s ease-in-out;
+  }
+  
+  
+  .alert-title {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #dc2626; /* Red color */
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+  
+  
+  .countdown {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #f59e0b; /* Orange color */
+    font-size: 1rem;
+    font-weight: bold;
+    margin-top: 10px;
+  }
+  
+  
+  .grab-button {
+    width: 100%;
+    margin-top: 10px;
+    padding: 0.75rem;
+    background: #1a5d0c; /* Green */
+    color: white;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 8px;
+    transition: background 0.3s ease-in-out;
+  }
+  
+  .grab-button:hover {
+    background: #145304; /* Darker green */
+  }
+  
+  
+  .grab-button:disabled {
+    background: #ccc;
+    cursor: not-allowed;
+  }
+  
+  
+  @keyframes fadeOut {
+    from {
+      opacity: 1;
+    }
+    to {
+      opacity: 0;
+    }
+  }
+  
+  .animate-fade-out {
+    animation: fadeOut 1s ease-in-out forwards;
+  }
+  

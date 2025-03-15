@@ -1,0 +1,33 @@
+/* General Styles */
+.home {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    background-color: #ffffff;
+}
+
+.header, 
+.explore-menu, 
+.food-display, 
+.app-download {
+    width: 100%;
+    max-width: 1200px;
+    padding: 20px;
+    margin: 0 auto;
+}
+
+/* Ensure Sections Have Proper Gaps */
+.explore-menu {
+    margin-top: 20px;
+}
+
+.food-display {
+    margin-top: 30px;
+}
+
+.app-download {
+    margin-top: 40px;
+    margin-bottom: 50px;
+}
+

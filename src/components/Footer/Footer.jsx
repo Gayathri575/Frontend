@@ -17,7 +17,6 @@ const Footer = () => {
   return (
     <footer className='footer' id='footer'>
       <div className="footer-content">
-        {/* Left Section: Logo & Social Media */}
         <div className="footer-content-left">
           <img src={assets.jhead} alt="Logo" className="jhead" width="100" height="auto" />
           <p>Your favorite food, delivered fast.</p>
@@ -33,8 +32,6 @@ const Footer = () => {
             </a>
           </div>
         </div>
-
-        {/* Center Section: Company Links */}
         <div className="footer-content-center">
           <h2>COMPANY</h2>
           <ul>
@@ -44,8 +41,6 @@ const Footer = () => {
             <li><a href="#privacy">Privacy Policy</a></li>
           </ul>
         </div>
-
-        {/* Right Section: Contact Info & Newsletter */}
         <div className="footer-content-right">
           <h2>GET IN TOUCH</h2>
           <ul>
@@ -53,7 +48,7 @@ const Footer = () => {
             <li>📧 Email: <a href="mailto:jalapenodelivry@gmail.com">jalapenodelivry@gmail.com</a></li>
           </ul>
 
-          {/* Newsletter Signup */}
+        
           <form className="newsletter" onSubmit={handleSubscribe}>
             <input
               type="email"
@@ -66,8 +61,6 @@ const Footer = () => {
           </form>
         </div>
       </div>
-
-      {/* Footer Bottom */}
       <hr />
       <p>&copy; 2025 Jalapeño. All Rights Reserved.</p>
     </footer>

@@ -53,11 +53,4 @@
   .submit-btn:hover {
     background: #144d09;
   }
-  
-  /* Responsive */
-  @media (max-width: 480px) {
-    .multi-field {
-      flex-direction: column;
-    }
-  }
-  
+    
